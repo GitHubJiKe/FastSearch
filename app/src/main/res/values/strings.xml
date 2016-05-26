@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FastSearch</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="day_light">DayLight</string>
+    <string name="night_dark">NightDark</string>
+    <string name="password">PassWord</string>
+    <string name="username">UserName</string>
+    <string name="login">Login</string>
+    <string name="login_title">Login FastSearch</string>
+    <string name="register_title">Register New User</string>
+    <string name="register">Register</string>
+    <string name="helpertext1">Please input pure number</string>
+    <string name="helpertext2">Please input pure text</string>
+    <string name="helpertext3">Please input password again</string>
+    <string name="errormessage">Only String Valid!</string>
+    <string name="regxar">\\d+</string>
+    <string name="password_not_same">password nor same</string>
+    <string name="user_name">GitHubJiKe</string>
+    <string name="email">ypf9319@gmail.com</string>
+    <string name="finished">Finished</string>
+    <string name="search">Search</string>
+    <string name="unfinished">Unfinished</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="refresh">Refresh Success</string>
+    <string name="enter_to_infor">Enter To Information</string>
+    <string name="delete_all">All Records Deleted</string>
+    <string name="sure">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_open_camera">Open Camera</string>
+    <string name="input_number">Number</string>
+    <string name="input_company">Company</string>
+    <string name="choose_com">Choose Company</string>
+</resources>

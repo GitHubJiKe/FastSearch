@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            style="@style/LoginEditText"
+            android:gravity="center"
+            android:text="@string/register_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/title_text_size"
+            app:reflectionColor="@color/colorAccent" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_username"
+            style="@style/LoginEditText"
+            android:hint="@string/username"
+            android:inputType="text"
+            app:met_autoValidate="true"
+            app:met_baseColor="@android:color/black"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/edit_text_size"
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@color/colorAccent"
+            app:met_hideUnderline="false"
+            app:met_iconLeft="@mipmap/ic_account_child_black_48dp"
+            app:met_maxCharacters="6"
+            app:met_minCharacters="0"
+            app:met_primaryColor="@color/colorPrimaryDark" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_password"
+            style="@style/LoginEditText"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            app:met_autoValidate="true"
+            app:met_baseColor="@android:color/black"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/edit_text_size"
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@color/colorAccent"
+            app:met_hideUnderline="false"
+            app:met_iconLeft="@mipmap/ic_lock_black_48dp"
+            app:met_maxCharacters="6"
+            app:met_minCharacters="0"
+            app:met_primaryColor="@color/colorPrimaryDark" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_password2"
+            style="@style/LoginEditText"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            app:met_autoValidate="true"
+            app:met_baseColor="@android:color/black"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/edit_text_size"
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@color/colorAccent"
+            app:met_hideUnderline="false"
+            app:met_iconLeft="@mipmap/ic_lock_black_48dp"
+            app:met_maxCharacters="6"
+            app:met_minCharacters="0"
+            app:met_primaryColor="@color/colorPrimaryDark" />
+
+        <com.romainpiel.shimmer.ShimmerButton
+            android:id="@+id/register__btn"
+            style="@style/LoginButton_"
+            android:enabled="false"
+            android:text="@string/register" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+

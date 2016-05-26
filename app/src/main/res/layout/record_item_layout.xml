@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sml="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <com.tubb.smrv.SwipeMenuLayout
+        android:id="@+id/sml"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        sml:sml_auto_open_percent="0.2"
+        sml:sml_scroller_duration="0"
+        sml:sml_scroller_interpolator="@android:anim/bounce_interpolator">
+
+        <include
+            android:id="@id/smContentView"
+            layout="@layout/content_layout" />
+
+        <include
+            android:id="@id/smMenuViewRight"
+            layout="@layout/rightmenu_layout" />
+    </com.tubb.smrv.SwipeMenuLayout>
+</android.support.v7.widget.CardView>

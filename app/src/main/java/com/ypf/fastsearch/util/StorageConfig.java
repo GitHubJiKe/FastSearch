@@ -1,0 +1,64 @@
+package com.ypf.fastsearch.util;
+
+import android.os.Environment;
+import android.util.Log;
+
+import java.io.File;
+
+/**
+ * 存储路径相关配置
+ */
+public class StorageConfig {
+    /**
+     * SD卡的目录
+     */
+    public static String externalStoragePath = Environment.getExternalStorageDirectory().getAbsolutePath();
+    /**
+     * 应用的根目录
+     */
+    public static String ROOT = "FastSearch";
+    /**
+     * 根目录
+     */
+    public static String defaultRootPath = externalStoragePath.concat("/").concat(ROOT).concat("/");
+    /**
+     * 列表缓存目录
+     */
+    public static String defaultCachePath = defaultRootPath.concat("/caches/");
+    /**
+     * 图片缓存目录
+     */
+    public static String defaultImagePath = defaultRootPath.concat("/image/");
+    /**
+     * Sqlite数据库文件位置
+     */
+    public static String defaultSqliteDbPath = defaultRootPath.concat("/sqlite/");
+
+    /**
+     * 创建基础文件夹
+     */
+    public static void mkDirs() {
+        Log.d("TAG", "mkDirs");
+        //根目录
+        File defaultRoot = new File(defaultRootPath);
+        if (!defaultRoot.exists()) {
+            Log.d("TAG", "mkDirs");
+            defaultRoot.mkdirs();
+        }
+        //列表缓存目录
+        File defaultCache = new File(defaultCachePath);
+        if (!defaultCache.exists()) {
+            defaultCache.mkdirs();
+        }
+        //图片缓存目录
+        File defaultImage = new File(defaultImagePath);
+        if (!defaultImage.exists()) {
+            defaultImage.mkdirs();
+        }
+        //Sqlite数据库文件位置
+        File defaultSqliteDb = new File(defaultSqliteDbPath);
+        if (!defaultSqliteDb.exists()) {
+            defaultSqliteDb.mkdirs();
+        }
+    }
+}

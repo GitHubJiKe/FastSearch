@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_number"
+            style="@style/SearchEditText"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:hint="@string/input_number"
+            android:inputType="number"
+            app:met_autoValidate="true"
+            app:met_baseColor="@android:color/black"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/edit_text_size"
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@color/colorAccent"
+            app:met_hideUnderline="false"
+            app:met_iconLeft="@mipmap/ic_view_week_black_48dp"
+            app:met_minCharacters="8"
+            app:met_primaryColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/open_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_camera_alt_black_18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_company"
+            style="@style/SearchEditText"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:hint="@string/input_company"
+            android:inputType="text"
+            app:met_autoValidate="true"
+            app:met_baseColor="@android:color/black"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelTextSize="@dimen/edit_text_size"
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@color/colorAccent"
+            app:met_hideUnderline="false"
+            app:met_iconLeft="@mipmap/ic_local_shipping_black_48dp"
+            app:met_minCharacters="2"
+            app:met_primaryColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/choose_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_keyboard_arrow_right_black_18dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.romainpiel.shimmer.ShimmerButton
+            android:id="@+id/search_btn"
+            style="@style/LoginButton_"
+            android:layout_alignParentTop="true"
+            android:enabled="false"
+            android:text="@string/search" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
