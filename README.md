@@ -1,5 +1,7 @@
 # FastSearch
 
+###快查应用的Material Design风格Demo设计
+
 ##引用的第三方库
 
       dependencies {
@@ -21,4 +23,17 @@
     	}
     	
 ##实现的效果：
-Material Design Style的UI界面，侧滑菜单，底部导航，侧滑删除，浮动按钮，下拉刷新……
+* Material Design Style的UI界面
+* 侧滑菜单
+* 底部导航
+* 侧滑删除
+* 浮动按钮
+* 下拉刷新……
+
+##安装包所在位置：
+**\FastSearch\app\FastSearch.apk**
+##系统支持：
+**Android5.0-**
+
+##GitHub：
+**https://github.com/GitHubJiKe/FastSearch**
